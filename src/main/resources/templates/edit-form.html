@@ -1,0 +1,38 @@
+<html>
+        <body>
+        <form method="post" action="/update">
+            <input type="hidden"
+                   name="id"
+                   th:value="${book.id}"/>
+            <label> Название книги
+                <input type="text"
+                       name="name"
+                       placeholder="Book name"
+                       th:value="${book.name}"/>
+            </label>
+            <label> Автор
+                <input type="text"
+                     name="author"
+                     placeholder="Book author"
+                     th:value="${book.author}"/>
+            </label>
+            <label> Колличество страниц
+                <input type="text"
+                     name="pages"
+                     placeholder="Number of pages"
+                     th:value="${book.pages}"/>
+            </label>
+            <label> Жанр
+                <input type="text"
+                       name="genre"
+                       placeholder="Genre"
+                       th:value="${book.genre}"/>
+            </label>
+            <input type="submit"/>
+
+
+        </form>
+        </body>
+
+
+</html>
